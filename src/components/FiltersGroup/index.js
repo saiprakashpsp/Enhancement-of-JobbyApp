@@ -35,7 +35,7 @@ const FiltersGroup = props => {
         />
         <button
           type="button"
-          testid="searchButton"
+          data-testid="searchButton"
           className="search-button-container"
           onClick={getJobs}
         >

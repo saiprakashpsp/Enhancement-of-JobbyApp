@@ -52,12 +52,9 @@ class ProfileDetails extends Component {
     return (
       <div className="profile-success-container">
         <img src={profileImageUrl} alt="profile" className="profile-img" />
-        {/* <h1 className="profile-heading">{name}</h1>
-        <p className="profile-bio">{shortBio}</p> */}
-        {/* profile details are obtained from api so i commented them and write my
-        own name */}
-
-        <h1 className="profile-heading">Vijay Harsha Made</h1>
+        <h1 className="profile-heading">{name}</h1>
+        <p className="profile-bio">{shortBio}</p>
+        <h1 className="profile-heading">Koppolu Koushik</h1>
         <p className="profile-bio">Frontend Developer</p>
       </div>
     )
@@ -67,7 +64,7 @@ class ProfileDetails extends Component {
     <div className="profile-error-view-container">
       <button
         type="button"
-        testid="button"
+        data-testid="button"
         className="profile-failure-button"
         onClick={this.getProfile}
       >
@@ -77,7 +74,7 @@ class ProfileDetails extends Component {
   )
 
   renderLoadingView = () => (
-    <div className="profile-loader-container " testid="loader">
+    <div className="profile-loader-container " data-testid="loader">
       <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
     </div>
   )
